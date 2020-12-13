@@ -1,0 +1,55 @@
+.login {
+  background-color:#f8f8f8;
+  height:100vh;
+  width:100vw;
+  display:grid;
+  place-items: center;
+}
+
+.login__container{
+  padding:100px;
+  text-align: center;
+  background-color:white;
+  border-radius:10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12)
+}
+
+.login__container > img {
+  object-fit: contain;
+  height:100px;
+  margin-bottom:40px;
+}
+
+.login__container > button {
+  margin-top:50px;
+  text-transform: inherit !important;
+  background-color: #0a8d48 !important;
+  color:white;
+}
+
+@media only screen and (max-width: 1440px){}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 414px) {
+  .login__container{
+    padding:100px;
+    text-align: center;
+    background-color:white;
+    border-radius:10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12)
+  }
+
+  .login__text > h1{
+    font-size: 1.7rem;
+  }
+}

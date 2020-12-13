@@ -1,0 +1,249 @@
+.chat{
+  flex:.65;
+  display:flex;
+  flex-direction: column;
+}
+
+.chat__sidebar{
+  display:none;
+}
+
+.chat__header{
+  padding:20px;
+  display: flex;
+  align-items: center;
+  border-bottom:1px solid lightgray;
+}
+
+.chat__chatMenu{
+  display:none;
+}
+
+.chat__headerInfo{
+  flex:1;
+  padding-left:20px;
+}
+
+.chat__headerInfo > h3{
+  margin-bottom: 3px;
+  font-weight:500;
+}
+
+.chat__headerInfo > p {
+  color:gray;
+  font-size: .75rem;
+}
+
+.header__phone{
+  display:none;
+}
+
+.chat__name{
+  position:absolute;
+  top:-15px;
+  font-weight:800;
+  font-size:xx-small;
+}
+
+.chat__timestamp{
+  margin-left:10px;
+  font-size:xx-small;
+  opacity: 60%;
+}
+
+.chat__message{
+  position:relative;
+  font-size:16px;
+  padding:10px;
+  background-color:white;
+  border-radius:10px;
+  width:fit-content;
+  margin-bottom:30px;
+}
+
+.chat__receiver{
+  margin-left:auto;
+  background-color: #dcf8c6;
+}
+
+.chat__headerRight {
+  display:flex;
+  justify-content: space-between;
+  min-width:100px;
+}
+
+.chat__body{
+  flex:1;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-repeat:repeat;
+  background-position:center;
+  padding:30px;
+  overflow:scroll;
+}
+
+.chat__body::-webkit-scrollbar {
+  display: none;
+}
+
+.chat__footer{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:62px;
+  border-top:1px solid lightgray;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer > form > input {
+  flex: 1;
+  border-radius:30px;
+  border:none;
+  padding:10px;
+  outline:none;
+}
+
+.chat__footer > form > button {
+  display:none;
+}
+
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color:gray;
+}
+
+@media only screen and (max-width: 1440px){}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .chat{
+    flex:1;
+    position:relative;
+  }
+
+  .chat__sidebar{
+    display:flex;
+    left:0;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    background: white;
+  }
+
+  .chat__sidebarContainer{
+    display:flex;
+    flex-direction:column;
+    left:0;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1001;
+    background: white;
+  }
+
+  .chat__chatMenu{
+    display:flex;
+    margin-right: 30px;
+    align-items:center;
+    cursor:pointer;
+  }
+
+  .chat__chatMenu > .MuiSvgIcon-root{
+    font-size: 2rem;
+  }
+
+  .chat__chatMenu > p{
+    margin-left: -5px;
+    transform:translateY(1px);
+    font-weight:600;
+  }
+
+  .chat__header{
+    z-index:999;
+  }
+
+  .chat__headerRight{
+    display:none;
+  }
+
+  .chat__text > p{
+    font-size:.85rem;
+    max-width: 200px;
+  }
+
+  .header__phone{
+    display:none;
+  }
+
+  .header__phone > .MuiSvgIcon-root{
+    display:flex;
+    color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 414px) {
+  .chat__body{
+    background-attachment: fixed;
+  }
+
+  .chat__chatMenu{
+    display:flex;
+    margin-right: 30px;
+  }
+
+  .chat__chatMenu > .MuiSvgIcon-root{
+    font-size: 2rem;
+  }
+
+  .chat__chatMenu > p{
+    margin-left: -5px;
+    transform:translateY(1px)
+  }
+
+  .chat__header {
+    position: sticky;
+    padding: 13px 0;
+    top:0;
+    background: white;
+    z-index: 999;
+  }
+
+  .chat__header > .MuiAvatar-root{
+    width: 30px;
+    height: 30px;
+  }
+
+  .chat__headerInfo {
+    padding-left: 7px;
+  }
+
+  .chat__headerInfo > h3{
+    font-weight: 600;
+    font-size: .85rem;
+  }
+  
+  .chat__headerInfo > p {
+    font-size:.6rem;
+  }
+
+  .chat__footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#ededed;
+  }
+}
+
+
